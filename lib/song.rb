@@ -7,7 +7,7 @@ class Song
   include Memorable::InstanceMethods
 
   attr_accessor :name
-  attr_reader :artist
+  attr_accessor :artist
 
   @@songs = []
 
@@ -22,9 +22,4 @@ class Song
   def self.all
     @@songs
   end
-
-  def artist=(artist)
-    @artist = artist
-  end
-
 end
